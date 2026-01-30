@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP-Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span>Library KambiDev</span>
+        </div>
+
+        <div>
+            <button class="btn-add">Add Book</button>
+        </div>
+
+        <dialog>
+            <form method="dialog">
+                <div>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" required>
+                </div>
+
+                <div>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" required>
+                </div>
+
+                <div>
+                    <label for="pages">Pages:</label>
+                    <input type="number" id="pages" required>
+                </div>
+
+                <div>
+                    <label for="status">Status:</label>
+                    <select id="status">
+                        <option selected disabled>select...</option>
+                        <option value="read">Read</option>
+                        <option value="not-read">Not read</option>
+                    </select>
+                </div>
+
+                <div class="btn-actions">
+                    <button value="cancel" formnovalidate>Cancel</button>
+                    <button value="add">Add</button>
+                </div>
+            </form>
+        </dialog>
+    </header>
+
+    <main>
+        <h2>Your Collection</h2>
+        <section class="result">
+        </section>
+    </main>
+
+    <footer>
+        <span>© 2026 kambiDev - All rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
