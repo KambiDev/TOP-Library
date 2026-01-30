@@ -72,19 +72,9 @@ result.addEventListener('click', (e) => {
     }
 });
 
+const book1 = new Book('Anonimus', 'X', 221, 'read');
+const book2 = new Book('elias', 'elias', 221, 'not-read');
 
-
-
-
-
-
-
-
-
-// const book1 = new Book("elias", "elias", 221, true);
-// const book2 = new Book("elias", "elias", 221, false);
-
-
-// myLibrary.add(book1);
-// myLibrary.add(book2);
-// myLibrary.render();
+myLibrary.add(book1);
+myLibrary.add(book2);
+myLibrary.render();
